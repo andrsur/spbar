@@ -1,0 +1,9 @@
+/home/andrsur/projects/spbar/builden/CMakeFiles/spbar.dir
+/home/andrsur/projects/spbar/builden/CMakeFiles/edit_cache.dir
+/home/andrsur/projects/spbar/builden/CMakeFiles/rebuild_cache.dir
+/home/andrsur/projects/spbar/builden/CMakeFiles/list_install_components.dir
+/home/andrsur/projects/spbar/builden/CMakeFiles/install.dir
+/home/andrsur/projects/spbar/builden/CMakeFiles/install/local.dir
+/home/andrsur/projects/spbar/builden/CMakeFiles/install/strip.dir
+/home/andrsur/projects/spbar/builden/CMakeFiles/spbar_autogen_timestamp_deps.dir
+/home/andrsur/projects/spbar/builden/CMakeFiles/spbar_autogen.dir

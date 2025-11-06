@@ -1,0 +1,27 @@
+# ninja log v7
+2	34	1762460154521166567	spbar_autogen/timestamp	eeccd5269998fdbf
+2	34	1762460154521166567	spbar_autogen/mocs_compilation.cpp	eeccd5269998fdbf
+2	34	1762460154521166567	/home/andrsur/projects/spbar/builden/spbar_autogen/timestamp	eeccd5269998fdbf
+2	34	1762460154521166567	/home/andrsur/projects/spbar/builden/spbar_autogen/mocs_compilation.cpp	eeccd5269998fdbf
+232	2420	1762460027611511033	CMakeFiles/spbar.dir/spbar_autogen/mocs_compilation.cpp.o	d9b7408564737718
+232	2482	1762460027612404441	CMakeFiles/spbar.dir/main.cpp.o	3046008e5181349a
+35	2353	1762460154554985433	CMakeFiles/spbar.dir/mainwindow.cpp.o	7c0923fb38f0b497
+2354	2619	1762460156873937652	spbar	7b14a53cd773d174
+3	36	1762460198640873576	spbar_autogen/timestamp	eeccd5269998fdbf
+3	36	1762460198640873576	spbar_autogen/mocs_compilation.cpp	eeccd5269998fdbf
+3	36	1762460198640873576	/home/andrsur/projects/spbar/builden/spbar_autogen/timestamp	eeccd5269998fdbf
+3	36	1762460198640873576	/home/andrsur/projects/spbar/builden/spbar_autogen/mocs_compilation.cpp	eeccd5269998fdbf
+36	2419	1762460198673870365	CMakeFiles/spbar.dir/mainwindow.cpp.o	7c0923fb38f0b497
+2419	2680	1762460201056638494	spbar	7b14a53cd773d174
+2	33	1762460267408180975	spbar_autogen/timestamp	eeccd5269998fdbf
+2	33	1762460267408180975	spbar_autogen/mocs_compilation.cpp	eeccd5269998fdbf
+2	33	1762460267408180975	/home/andrsur/projects/spbar/builden/spbar_autogen/timestamp	eeccd5269998fdbf
+2	33	1762460267408180975	/home/andrsur/projects/spbar/builden/spbar_autogen/mocs_compilation.cpp	eeccd5269998fdbf
+33	2167	1762460267439177958	CMakeFiles/spbar.dir/mainwindow.cpp.o	7c0923fb38f0b497
+2167	2432	1762460269573970171	spbar	7b14a53cd773d174
+4	50	1762461360817330357	spbar_autogen/timestamp	eeccd5269998fdbf
+4	50	1762461360817330357	spbar_autogen/mocs_compilation.cpp	eeccd5269998fdbf
+4	50	1762461360817330357	/home/andrsur/projects/spbar/builden/spbar_autogen/timestamp	eeccd5269998fdbf
+4	50	1762461360817330357	/home/andrsur/projects/spbar/builden/spbar_autogen/mocs_compilation.cpp	eeccd5269998fdbf
+50	2361	1762461360863325661	CMakeFiles/spbar.dir/mainwindow.cpp.o	7c0923fb38f0b497
+2361	2649	1762461363174089754	spbar	7b14a53cd773d174
