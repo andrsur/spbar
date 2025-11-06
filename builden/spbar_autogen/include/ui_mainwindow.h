@@ -31,6 +31,8 @@ public:
     QHBoxLayout *horizontalLayout;
     QLabel *label;
     QSpacerItem *horizontalSpacer;
+    QFrame *frame_2;
+    QHBoxLayout *horizontalLayout_2;
     QPushButton *browser;
     QPushButton *telegram;
     QPushButton *ide;
@@ -53,7 +55,9 @@ public:
         gridLayout->setContentsMargins(0, 0, 0, 0);
         frame = new QFrame(centralwidget);
         frame->setObjectName("frame");
-        frame->setStyleSheet(QString::fromUtf8("background-color: rgba(0, 0, 0, 80);"));
+        frame->setCursor(QCursor(Qt::CursorShape::ArrowCursor));
+        frame->setStyleSheet(QString::fromUtf8("background-color: rgba(0, 0, 0, 80);\n"
+"color: rgb(255, 255, 255);"));
         frame->setFrameShape(QFrame::Shape::StyledPanel);
         frame->setFrameShadow(QFrame::Shadow::Raised);
         frame->setLineWidth(1);
@@ -75,33 +79,50 @@ public:
 
         horizontalLayout->addItem(horizontalSpacer);
 
-        browser = new QPushButton(frame);
+        frame_2 = new QFrame(frame);
+        frame_2->setObjectName("frame_2");
+        frame_2->setFrameShape(QFrame::Shape::StyledPanel);
+        frame_2->setFrameShadow(QFrame::Shadow::Raised);
+        horizontalLayout_2 = new QHBoxLayout(frame_2);
+        horizontalLayout_2->setSpacing(0);
+        horizontalLayout_2->setObjectName("horizontalLayout_2");
+        horizontalLayout_2->setContentsMargins(0, 0, 0, 0);
+        browser = new QPushButton(frame_2);
         browser->setObjectName("browser");
-        browser->setStyleSheet(QString::fromUtf8("background-color: rgba(0, 0, 0, 20);\n"
-"selection-background-color: rgb(0, 0, 0);"));
+        browser->setCursor(QCursor(Qt::CursorShape::UpArrowCursor));
+        browser->setStyleSheet(QString::fromUtf8("selection-background-color: rgba(0, 0, 0, 189);\n"
+"alternate-background-color: rgba(0, 0, 0, 189);"));
+        browser->setFlat(true);
 
-        horizontalLayout->addWidget(browser);
+        horizontalLayout_2->addWidget(browser);
 
-        telegram = new QPushButton(frame);
+        telegram = new QPushButton(frame_2);
         telegram->setObjectName("telegram");
-        telegram->setStyleSheet(QString::fromUtf8("background-color: rgba(0, 0, 0, 20);\n"
-"selection-background-color: rgb(0, 0, 0);"));
+        telegram->setCursor(QCursor(Qt::CursorShape::UpArrowCursor));
+        telegram->setStyleSheet(QString::fromUtf8("selection-background-color: rgba(0, 0, 0, 189);"));
+        telegram->setFlat(true);
 
-        horizontalLayout->addWidget(telegram);
+        horizontalLayout_2->addWidget(telegram);
 
-        ide = new QPushButton(frame);
+        ide = new QPushButton(frame_2);
         ide->setObjectName("ide");
-        ide->setStyleSheet(QString::fromUtf8("background-color: rgba(0, 0, 0, 20);\n"
-"selection-background-color: rgb(0, 0, 0);"));
+        ide->setCursor(QCursor(Qt::CursorShape::UpArrowCursor));
+        ide->setStyleSheet(QString::fromUtf8("selection-background-color: rgba(0, 0, 0, 189);"));
+        ide->setFlat(true);
 
-        horizontalLayout->addWidget(ide);
+        horizontalLayout_2->addWidget(ide);
 
-        terminal = new QPushButton(frame);
+        terminal = new QPushButton(frame_2);
         terminal->setObjectName("terminal");
-        terminal->setStyleSheet(QString::fromUtf8("background-color: rgba(0, 0, 0, 20);\n"
-"selection-background-color: rgb(0, 0, 0);"));
+        terminal->setCursor(QCursor(Qt::CursorShape::UpArrowCursor));
+        terminal->setAutoFillBackground(false);
+        terminal->setStyleSheet(QString::fromUtf8("selection-background-color: rgba(0, 0, 0, 189);"));
+        terminal->setFlat(true);
 
-        horizontalLayout->addWidget(terminal);
+        horizontalLayout_2->addWidget(terminal);
+
+
+        horizontalLayout->addWidget(frame_2);
 
         horizontalSpacer_2 = new QSpacerItem(40, 20, QSizePolicy::Policy::Expanding, QSizePolicy::Policy::Minimum);
 
@@ -116,6 +137,9 @@ public:
         font1.setItalic(false);
         font1.setKerning(true);
         pvctrl->setFont(font1);
+        pvctrl->setCursor(QCursor(Qt::CursorShape::UpArrowCursor));
+        pvctrl->setStyleSheet(QString::fromUtf8("background-color: rgba(0, 0, 0, 104);"));
+        pvctrl->setFlat(true);
 
         horizontalLayout->addWidget(pvctrl);
 
@@ -123,6 +147,8 @@ public:
         cTime->setObjectName("cTime");
         cTime->setMaximumSize(QSize(40, 16777215));
         cTime->setStyleSheet(QString::fromUtf8("background-color: rgba(0, 0, 0, 104);"));
+        cTime->setAutoDefault(false);
+        cTime->setFlat(true);
 
         horizontalLayout->addWidget(cTime);
 
@@ -132,6 +158,14 @@ public:
         MainWindow->setCentralWidget(centralwidget);
 
         retranslateUi(MainWindow);
+
+        browser->setDefault(false);
+        telegram->setDefault(true);
+        ide->setDefault(true);
+        terminal->setDefault(true);
+        pvctrl->setDefault(false);
+        cTime->setDefault(false);
+
 
         QMetaObject::connectSlotsByName(MainWindow);
     } // setupUi
